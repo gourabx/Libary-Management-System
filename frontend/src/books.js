@@ -1,19 +1,19 @@
 const books = [
   {
-    name: 'The Alchemist',
-    writer: 'Paulo Coelho',
-    image: 'https://tse1.mm.bing.net/th/id/OIP.NRKemQTUiLKboblQnITDhgHaLP?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
+    name: 'To Kill a Mockingbird',
+    writer: 'Harper Lee',
+    image: 'https://covers.openlibrary.org/b/id/8228691-L.jpg'
   },
   {
-    name: 'Wings of Fire',
-    writer: 'A.P.J Abdul Kalam',
-    image: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1588286863i/634583.jpg',
+    name: '1984',
+    writer: 'George Orwell',
+    image: 'https://covers.openlibrary.org/b/id/1535610-L.jpg'
   },
   {
-    name: 'Harry Potter',
-    writer: 'J.K. Rowling',
-    image: 'https://lafrikileria.com/blog/wp-content/uploads/2023/05/serie-no-universo-harry-potter-pode-ser-realidade-confira-reproducao-hbo-max.jpg',
-  },
+    name: 'The Great Gatsby',
+    writer: 'F. Scott Fitzgerald',
+    image: 'https://covers.openlibrary.org/b/id/7352161-L.jpg'
+  }
 ];
 
 export default books;
