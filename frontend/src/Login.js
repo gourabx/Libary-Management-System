@@ -1,44 +1,48 @@
 import React, { useState } from 'react';
 
 function Login({ onLogin }) {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email === 'admin@xyz.com' && password === '1234') {
+    if (username === 'User@xyz.com' && password === '1234') {
       onLogin();
     } else {
-      alert('Invalid credentials');
+      alert('Invalid username or password');
     }
   };
 
   return (
-    <div>
-      <h2> Welcome to Library</h2>
+    <div style={{ margin: '100px auto', width: '300px', textAlign: 'center' }}>
+       <h1>Welcome to Library Management System
+</h1>
+      <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Username"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
           required
-        />
-        <br />
+        /><br /><br />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-        />
-        <br />
-        <button type="submit">
-          Login
-        </button>
+        /><br /><br />
+        <button type="submit">Login</button>
       </form>
     </div>
   );
+}
+
+export default Login;
+
+
+
 }
 
 export default Login;
